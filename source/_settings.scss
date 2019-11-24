@@ -1,0 +1,8 @@
+$animate-scss-default-duration: 1s !default;
+$animate-scss-second-delays: 2, 3, 4, 5 !default;
+$animate-scss-durations: (
+  fast: 800ms,
+  faster: 500ms,
+  slow: 2s,
+  slower: 3s,
+) !default;

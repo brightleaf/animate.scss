@@ -1,0 +1,9 @@
+.db
+.DS_Store
+.idea
+.ini
+.log
+.sass-cache
+.nvmrc
+node_modules/
+test/

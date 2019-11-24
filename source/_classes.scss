@@ -1,0 +1,25 @@
+.animated {
+  animation-duration: $animate-scss-default-duration;
+  animation-fill-mode: both;
+
+  &.infinite {
+    animation-iteration-count: infinite;
+  }
+
+  @each $s in $animate-scss-second-delays {
+    &.delay-#{$s}s {
+      animation-delay: #{$s}s;
+    }
+  }
+
+  @each $speed, $duration in $animate-scss-durations {
+    &.#{$speed} {
+      animation-duration: $duration;
+    }
+  }
+
+  @media (prefers-reduced-motion) {
+    animation: unset !important;
+    transition: none !important;
+  }
+}
